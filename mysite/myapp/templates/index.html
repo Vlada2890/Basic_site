@@ -1,0 +1,15 @@
+<!-- myapp/templates/myapp/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example Site</title>
+</head>
+<body>
+    <h1>Examples</h1>
+    <ul>
+        {% for example in examples %}
+            <li>{{ example.name }} - {{ example.created_at }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
